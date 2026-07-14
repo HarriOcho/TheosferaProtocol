@@ -7,6 +7,7 @@ public final class ProtocolMessageType {
     public static final String BACKEND_HELLO = "BACKEND_HELLO";
     public static final String BACKEND_HELLO_ACK = "BACKEND_HELLO_ACK";
     public static final String PLAYER_AUTHENTICATED = "PLAYER_AUTHENTICATED";
+    public static final String PLAYER_AUTHENTICATED_ACK = "PLAYER_AUTHENTICATED_ACK";
     public static final String PLAYER_SERVER_READY = "PLAYER_SERVER_READY";
     public static final String TRANSFER_REQUEST = "TRANSFER_REQUEST";
     public static final String TRANSFER_RESULT = "TRANSFER_RESULT";
@@ -17,6 +18,7 @@ public final class ProtocolMessageType {
             BACKEND_HELLO,
             BACKEND_HELLO_ACK,
             PLAYER_AUTHENTICATED,
+            PLAYER_AUTHENTICATED_ACK,
             PLAYER_SERVER_READY,
             TRANSFER_REQUEST,
             TRANSFER_RESULT,

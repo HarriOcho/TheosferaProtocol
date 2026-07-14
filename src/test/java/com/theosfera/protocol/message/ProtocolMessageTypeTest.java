@@ -18,6 +18,7 @@ class ProtocolMessageTypeTest {
                         "BACKEND_HELLO",
                         "BACKEND_HELLO_ACK",
                         "PLAYER_AUTHENTICATED",
+                        "PLAYER_AUTHENTICATED_ACK",
                         "PLAYER_SERVER_READY",
                         "TRANSFER_REQUEST",
                         "TRANSFER_RESULT",

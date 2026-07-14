@@ -3,6 +3,7 @@ package com.theosfera.protocol.message;
 import com.theosfera.protocol.message.payload.BackendHelloAckPayload;
 import com.theosfera.protocol.message.payload.BackendHelloPayload;
 import com.theosfera.protocol.message.payload.PingPayload;
+import com.theosfera.protocol.message.payload.PlayerAuthenticatedAckPayload;
 import com.theosfera.protocol.message.payload.PlayerAuthenticatedPayload;
 import com.theosfera.protocol.message.payload.PlayerServerReadyPayload;
 import com.theosfera.protocol.message.payload.PongPayload;
@@ -28,6 +29,10 @@ public final class ProtocolMessageRegistry {
                     Map.entry(
                             ProtocolMessageType.PLAYER_AUTHENTICATED,
                             PlayerAuthenticatedPayload.class
+                    ),
+                    Map.entry(
+                            ProtocolMessageType.PLAYER_AUTHENTICATED_ACK,
+                            PlayerAuthenticatedAckPayload.class
                     ),
                     Map.entry(
                             ProtocolMessageType.PLAYER_SERVER_READY,
