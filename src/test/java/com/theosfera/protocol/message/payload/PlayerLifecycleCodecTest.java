@@ -39,6 +39,22 @@ class PlayerLifecycleCodecTest {
     }
 
     @Test
+    void roundTripsPlayerAuthenticatedAckPayload() {
+        PlayerAuthenticatedAckPayload payload =
+                new PlayerAuthenticatedAckPayload(
+                        PLAYER_ID,
+                        true,
+                        "Session registered"
+                );
+
+        assertRoundTrip(
+                ProtocolMessageType.PLAYER_AUTHENTICATED_ACK,
+                payload,
+                PlayerAuthenticatedAckPayload.class
+        );
+    }
+
+    @Test
     void roundTripsPlayerServerReadyPayload() {
         PlayerServerReadyPayload payload =
                 new PlayerServerReadyPayload(
